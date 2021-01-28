@@ -10,7 +10,7 @@
 
 
 </head>
-<body>
+<body id='game'>
 
     <div class="flex-container">
         <button class="restart" onclick="restartGame()">
@@ -22,29 +22,40 @@
         </div>
     </div>
 
+
+
     <div class="center">
         <div class="title">Guess My Number!</div>
     </div>
 
+
+
+
     <div class="flex-justify">
-        <div class="gameNumber"> ? </div>
+
+        <div class="hpPoints"> 
+            HP POINTS:
+            <img src="heart.png"/>  
+            <img src="heart.png"/>              
+            <img src="heart.png"/> 
+        </div>
+    
+        <div class="gameNumber" id="gameRandomNumber"> ? </div>
+        
     </div>
 
 
-    <div class="container">
-
-        <div class="infoRight">
-            <input class="playerNumber" id="myNumb" type="number" min="1" max="30" size="1"/>
-            <button class="checkBox" onclick="checkNumber()">Check!</button>
-        </div>
-
-        <div class="infoLeft">
-            <div class="hint" id="msg">
-                Start Guessing...
-            </div>
-        </div>
-
+    <div class="infoRight">
+        <input class="playerNumber" id="myNumb" type="number" min="1" max="30" size="1"/>
+        <button class="checkBox" onclick="checkNumber()" id='checkButton'>Check!</button>
     </div>
+
+    <div class="infoLeft">
+        <div class="hint" id="msg">
+            Start Guessing...
+        </div>
+    </div>
+
 
     
     

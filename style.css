@@ -17,7 +17,9 @@ button:hover {
 
 .flex-justify {
     display:flex;
-    justify-content: center;
+    justify-content:space-around;
+    margin: 0 15em;
+    
 }
 
 .flex-container{
@@ -28,14 +30,14 @@ button:hover {
 .restart {
     border-radius: 5px;
     background-color: white;
-    padding: 0.5em 1em;
+    padding: 0.2em 1em;
     font-size: 3em;
 }
 
 .rules {
     border-radius: 5px;
     background-color: white;
-    padding: 0.5em;
+    padding: 0.1em;
     font-size: 2em;
     align-self: center;
 }
@@ -46,6 +48,7 @@ button:hover {
     flex-direction: column;
     align-content: center;
 }
+
 
 .title{
     margin-top: 10px;
@@ -63,12 +66,20 @@ button:hover {
     padding: 0.2em 0.5em;
 }
 
-.container {
-    margin-top: 2em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
+img {
+    width: 30px;
+    height: auto;
+    margin-left: 5px;
 }
+
+.hpPoints{
+    font-size: 2em;
+    font-weight:bold;
+    color: white;
+    margin-top: 2em;
+}
+
+
 
 .infoRight {
     display: flex; 
@@ -101,7 +112,7 @@ button:hover {
 .hint {
     color: white;
     font-size: 4em;
-    margin-bottom: 1em;
+    margin: 0.5em;
     opacity: 0.3;
     align-items: center;
 }

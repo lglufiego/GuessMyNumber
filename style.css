@@ -1,0 +1,107 @@
+body {
+    font-family: 'Geo', sans-serif;
+    width: 80%;
+    background-color: rgb(41, 40, 40);
+    margin:auto;
+    margin-top: 1em;
+}
+
+button{
+    font-family: 'Geo', sans-serif;
+}
+
+button:hover {
+    background-color: rgb(41, 40, 40);
+    color: white;
+}
+
+.flex-justify {
+    display:flex;
+    justify-content: center;
+}
+
+.flex-container{
+    display:flex;
+    justify-content: space-between;
+}
+
+.restart {
+    border-radius: 5px;
+    background-color: white;
+    padding: 0.5em 1em;
+    font-size: 3em;
+}
+
+.rules {
+    border-radius: 5px;
+    background-color: white;
+    padding: 0.5em;
+    font-size: 2em;
+    align-self: center;
+}
+
+.center{
+    color: white;
+    display:inline;
+    flex-direction: column;
+    align-content: center;
+}
+
+.title{
+    margin-top: 10px;
+    font-size: 5em;
+    text-align: center;
+}
+
+.gameNumber{
+    border-radius: 5px;
+    display:inline;
+    font-size: 5em;
+    color: black;
+    background-color: white;
+    margin: 0.6em;
+    padding: 0.2em 0.5em;
+}
+
+.container {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.infoRight {
+    display: flex; 
+    justify-content: center;
+
+}
+
+.infoRight {
+    display:block;
+    text-align: center;
+}
+
+.infoLeft {
+    display:block;
+    text-align: center;
+}
+.playerNumber {
+    border-radius: 5px;
+    font-size: 2em;
+}
+
+.checkBox {
+    margin: 15px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 2em;
+    display:inline;
+}
+
+.hint {
+    color: white;
+    font-size: 4em;
+    margin-bottom: 1em;
+    opacity: 0.3;
+    align-items: center;
+}

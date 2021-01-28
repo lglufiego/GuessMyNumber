@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My Number</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Geo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <div class="flex-container">
+        <button class="restart" onclick="restartGame()">
+            Again!
+        </button>
+
+        <div class="rules">
+            &lt; between 1 and 30 	&gt;
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="title">Guess My Number!</div>
+    </div>
+
+    <div class="flex-justify">
+        <div class="gameNumber"> ? </div>
+    </div>
+
+
+    <div class="container">
+
+        <div class="infoRight">
+            <input class="playerNumber" id="myNumb" type="number" min="1" max="30" size="1"/>
+            <button class="checkBox" onclick="checkNumber()">Check!</button>
+        </div>
+
+        <div class="infoLeft">
+            <div class="hint" id="msg">
+                Start Guessing...
+            </div>
+        </div>
+
+    </div>
+
+    
+    
+    <script src="index.js"></script>
+
+</body>
+</html>

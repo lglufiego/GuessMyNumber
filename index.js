@@ -8,7 +8,7 @@ document.getElementById('myNumb').value = 1;
 
 
 
-function restartGame () {
+function restartGame() {
     randomNumber = Math.floor(Math.random() * 31); 
 
     if(randomNumber == 0) {
@@ -25,6 +25,7 @@ function restartGame () {
     document.getElementById('checkButton').disabled = false;
 
     document.getElementById('gameRandomNumber').innerHTML = '?';
+    document.getElementById('gameRandomNumber').style.fontSize = '5em';
 
     document.getElementById('game').style.backgroundColor = 'rgb(41, 40, 40)' ;
 
@@ -33,7 +34,22 @@ function restartGame () {
     document.getElementById('life3').src = "heart.png";
 
     lifepoint = 1;
+
+
     
+}
+
+function gameOver() {
+
+    document.getElementById('game').style.backgroundColor = 'black';
+    
+    // const heart = document.querySelector('.hpPoints');
+    // heart.parentElement.removeChild(heart);
+
+    document.getElementById('gameRandomNumber').innerText = 'GAME OVER, BRO! Try again...';
+    document.getElementById('gameRandomNumber').style.fontSize = '3em';
+    document.getElementById('checkButton').disabled = true;
+
 }
 
 
@@ -69,8 +85,10 @@ function checkNumber () {
             document.getElementById('life'+lifepoint).src = "empty_heart.png";
             lifepoint++;
             
+            
         } else {
-            console.log ('perdeu kkk lixo!');
+            
+            gameOver();
         }
 
 

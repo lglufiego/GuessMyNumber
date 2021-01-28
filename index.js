@@ -27,15 +27,23 @@ function restartGame () {
     document.getElementById('gameRandomNumber').innerHTML = '?';
 
     document.getElementById('game').style.backgroundColor = 'rgb(41, 40, 40)' ;
+
+    document.getElementById('life1').src = "heart.png";
+    document.getElementById('life2').src = "heart.png";
+    document.getElementById('life3').src = "heart.png";
+
+    lifepoint = 1;
     
 }
 
 
 
+let lifepoint = 1;
 
 function checkNumber () {
 
     let myNumber = document.getElementById('myNumb').value;
+
 
     if (myNumber != randomNumber) {
 
@@ -47,7 +55,6 @@ function checkNumber () {
             document.getElementById('msg').style.animation = 'shake 0.1s';
             document.getElementById('msg').style.animationIterationCount = 1;
             
-
         } else {
             document.getElementById('msg').style.opacity = 1;
             document.getElementById('msg').style.color = 'rgb(147,112,219)';
@@ -57,6 +64,15 @@ function checkNumber () {
         //display number already log
 
         //deduct 1 hp
+
+        if (lifepoint != 4){
+            document.getElementById('life'+lifepoint).src = "empty_heart.png";
+            lifepoint++;
+            
+        } else {
+            console.log ('perdeu kkk lixo!');
+        }
+
 
     }
     else {

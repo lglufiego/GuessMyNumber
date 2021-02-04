@@ -1,0 +1,158 @@
+body {
+    font-family: 'VT323', monospace;
+    width: 90%;
+    background-color: rgb(41, 40, 40);
+    margin:auto;
+    margin-top: 2em;
+}
+
+button{
+    font-family: 'VT323', monospace;
+}
+
+button:hover {
+    background-color: rgb(41, 40, 40);
+    color: white;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content:space-around;
+    margin: 0 15em;
+
+    
+}
+
+.flex-container{
+    display:flex;
+    justify-content: space-around;
+}
+
+.restart {
+    border-radius: 5px;
+    background-color: white;
+    padding: 0.2em 1em;
+    font-size: 2em;
+}
+
+.rules {
+    border-radius: 5px;
+    background-color: white;
+    padding: 0.1em;
+    font-size: 2em;
+    align-self: center;
+    text-align: center;
+}
+
+.center{
+    color: white;
+    display:inline;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+.title{
+    margin-top: 10px;
+    font-size: 5em;
+    text-align: center;
+    text-shadow: 3px 3px #000;
+}
+
+#randomNumber{
+
+    border-radius: 5px;
+    font-size: 6em;
+    color: black;
+    background-color: white;
+    margin: 0.6em;
+    padding: 0.2em 0.5em;
+
+}
+
+img {
+    width: 30px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.info{
+    font-size: 2em;
+    font-weight:bold;
+    color: white;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+#lifePoints {
+    font-size: 3em;
+    color:rgb(141, 12, 12);
+    text-shadow: 3px 3px #000;
+}
+
+.highscore{
+    font-size: 1.3em;
+    font-weight:bold;
+    color: white;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#highscoreNumber {
+    font-size: 3em;
+    color:rgb(76, 141, 12);
+    text-shadow: 3px 3px #000;
+}
+
+
+.checkNumber {
+    text-align: center;
+}
+
+.message {
+    display:block;
+    text-align: center;
+}
+.playerNumber {
+    border-radius: 5px;
+    font-size: 2em;
+
+}
+
+.checkBox {
+    margin: 15px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 2em;
+    display:inline;
+}
+
+.hint {
+    color: white;
+    font-size: 4em;
+    margin: 0.5em;
+    opacity: 0.3;
+}
+
+.valid{ 
+    font-size: 4em;
+    margin: 0.5em;
+    align-items: center;
+    color:rgb(0,0,153);
+    opacity: 1;
+    text-shadow : 2px 2px #000;
+
+}
+
+.invalid {
+    color : rgb(141, 12, 12);
+    opacity : 1;
+    text-shadow : 2px 2px #000;
+    font-size : 40px;
+    margin: 0.5em;
+}
